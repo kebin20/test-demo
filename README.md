@@ -10,13 +10,13 @@ A basic playground to experiment with testing using Jest and getting familiar wi
 
 Write tests for the following, and then make the tests pass!
 
-    - A capitalize function that takes a string and returns it with the first character capitalized.
+   - A capitalize function that takes a string and returns it with the first character capitalized.
 
-    - A reverseString function that takes a string and returns it reversed.
+   - A reverseString function that takes a string and returns it reversed.
 
-    - A calculator object that contains functions for the basic operations: add, subtract, divide, and multiply. Each of these functions should take two numbers and return the correct calculation.
+  - A calculator object that contains functions for the basic operations: add, subtract, divide, and multiply. Each of these functions should take two numbers and return the correct calculation.
 
-    - A caesarCipher function that takes a string and a shift factor and returns it with each character “shifted”. Read more about how a Caesar cipher works on this website.
+  - A caesarCipher function that takes a string and a shift factor and returns it with each character “shifted”. Read more about how a Caesar cipher works on this website.
         Don’t forget to test wrapping from z to a.
         Don’t forget to test keeping the same case.
         Don’t forget to test punctuation!
