@@ -26,5 +26,26 @@ class Calculator {
 
 const calculator = new Calculator();
 
+//Caesar cipher
+function caesarCipher(str, shift) {
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  let result = '';
 
-export { capitalize, reverseString, calculator };
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i];
+    const isUpperCase = char === char.toUpperCase();
+    const charIndex = alphabet.indexOf(char.toLowerCase());
+
+    if (charIndex === -1) {
+      // character not found in alphabet, preserve as is
+      result += char;
+    } else {
+      const newIndex = (charIndex + shift) % alphabet.length;
+      const newChar = alphabet[newIndex];
+      result += isUpperCase ? newChar.toUpperCase() : newChar;
+    }
+  }
+  return result;
+}
+
+export { capitalize, reverseString, calculator, caesarCipher };

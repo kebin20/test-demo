@@ -1,4 +1,9 @@
-import { capitalize, reverseString, calculator } from './test-exercises';
+import {
+  capitalize,
+  reverseString,
+  calculator,
+  caesarCipher,
+} from './test-exercises';
 
 // Capitalize
 test('capitalize hello world to Hello World', () => {
@@ -28,4 +33,12 @@ test('multiply 4 by 2 to equal 8', () => {
 // Calculator: divide
 test('divide 4 by 2 to equal 2', () => {
   expect(calculator.divide(4, 2)).toBe(2);
+});
+
+// caesarCipher
+test('caesarCipher shifts characters correctly', () => {
+  expect(caesarCipher('hello', 3)).toBe('khoor');
+  expect(caesarCipher('world', -1)).toBe('vnqkc');
+  expect(caesarCipher('abc', 0)).toBe('abc');
+  expect(caesarCipher('xyz', 1)).toBe('yza');
 });
