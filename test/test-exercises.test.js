@@ -3,6 +3,7 @@ import {
   reverseString,
   calculator,
   caesarCipher,
+  analyzeArray,
 } from './test-exercises';
 
 // Capitalize
@@ -41,4 +42,16 @@ test('caesarCipher shifts characters correctly', () => {
   expect(caesarCipher('world', -1)).toBe('vnqkc');
   expect(caesarCipher('abc', 0)).toBe('abc');
   expect(caesarCipher('xyz', 1)).toBe('yza');
+});
+
+//analyzeArray
+test('analyzeArray returns the correct object', () => {
+  const expected = {
+    average: 4,
+    min: 1,
+    max: 8,
+    length: 6,
+  };
+  const result = analyzeArray([1, 8, 3, 4, 2, 6]);
+  expect(result).toEqual(expected);
 });

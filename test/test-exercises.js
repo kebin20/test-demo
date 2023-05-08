@@ -50,7 +50,13 @@ function caesarCipher(str, shift) {
 
 // analyze array
 function analyzeArray(arr) {
-  
+  const sum = arr.reduce((a, b) => a + b, 0); // sum all the elements in the array
+  const average = sum / arr.length; // calculate the average
+  const min = Math.min(...arr);
+  const max = Math.max(...arr);
+  const length = arr.length;
+
+  return { average, min, max, length };
 }
 
 export { capitalize, reverseString, calculator, caesarCipher, analyzeArray };
